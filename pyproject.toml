@@ -1,0 +1,29 @@
+[project]
+name = "static-doc-chatbot"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Aayush Man Shrestha", email = "aayush.m.shrestha@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
+
+dependencies = [
+    "pymupdf",
+    "langchain-core",
+    "langchain-community",
+    "langchain-text-splitters",
+    "langchain-google-genai",
+    "langchain",
+    "python-dotenv>=1.1.1,<2.0.0",
+    "faiss-cpu>=1.11.0,<2.0.0",
+    "streamlit>=1.46.1,<2.0.0",
+    "fastapi>=0.110.0,<1.0.0",
+    "uvicorn[standard]>=0.29.0,<1.0.0",
+    "httpx>=0.27.0,<1.0.0",  # For internal API calls if needed
+    "langchain-groq (>=0.3.5,<0.4.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
