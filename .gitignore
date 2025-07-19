@@ -13,3 +13,12 @@ __pycache__/
 
 # Poetry
 poetry.lock
+
+# Secrets
+.env
+
+#UI
+ui*
+
+#tests
+test*.py
